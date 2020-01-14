@@ -30,13 +30,14 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'WaykiChainViewController/Classes/**/*'
+  s.source_files = 'WaykiChainViewController/Classes/**/*','**/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'WaykiChainViewController' => ['WaykiChainViewController/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h','**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Alamofire'
+  s.dependency 'SVProgressHUD'
 end

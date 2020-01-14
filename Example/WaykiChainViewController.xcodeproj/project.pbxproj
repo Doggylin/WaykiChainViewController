@@ -12,7 +12,6 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B4E635049A790CB342AA5844 /* Pods_WaykiChainViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B0D498CED70287D04CD21C /* Pods_WaykiChainViewController_Example.framework */; };
 		F66C5ED54534597606E35A3E /* Pods_WaykiChainViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78F31ACF72C3FAFAA53FBC3 /* Pods_WaykiChainViewController_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -28,8 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02665EFA6F6B1D648AFE19E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5A4E3878F45062F8395C21D2 /* WaykiChainViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WaykiChainViewController.podspec; path = ../WaykiChainViewController.podspec; sourceTree = "<group>"; };
+		02665EFA6F6B1D648AFE19E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5A4E3878F45062F8395C21D2 /* WaykiChainViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WaykiChainViewController.podspec; path = ../WaykiChainViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* WaykiChainViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaykiChainViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +45,7 @@
 		93F8A9744C8A0150781AE7B9 /* Pods-WaykiChainViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaykiChainViewController_Example.debug.xcconfig"; path = "Target Support Files/Pods-WaykiChainViewController_Example/Pods-WaykiChainViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B831E324715D2487E935D184 /* Pods-WaykiChainViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaykiChainViewController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WaykiChainViewController_Tests/Pods-WaykiChainViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D78F31ACF72C3FAFAA53FBC3 /* Pods_WaykiChainViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaykiChainViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC8E61AE360D8F713F328028 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EC8E61AE360D8F713F328028 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +155,6 @@
 				B831E324715D2487E935D184 /* Pods-WaykiChainViewController_Tests.debug.xcconfig */,
 				82ADB7B824B09F674FB204B6 /* Pods-WaykiChainViewController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +225,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -269,10 +268,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WaykiChainViewController_Example/Pods-WaykiChainViewController_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/WaykiChainViewController/WaykiChainViewController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WaykiChainViewController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,7 +343,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

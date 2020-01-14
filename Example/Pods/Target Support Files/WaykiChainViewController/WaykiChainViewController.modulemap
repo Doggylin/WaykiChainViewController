@@ -1,0 +1,6 @@
+framework module WaykiChainViewController {
+  umbrella header "WaykiChainViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

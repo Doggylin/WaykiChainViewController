@@ -1,0 +1,6 @@
+framework module Pods_WaykiChainViewController_Example {
+  umbrella header "Pods-WaykiChainViewController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

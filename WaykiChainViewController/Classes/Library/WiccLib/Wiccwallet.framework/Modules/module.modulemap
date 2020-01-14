@@ -1,0 +1,8 @@
+framework module "Wiccwallet" {
+	header "ref.h"
+    header "Wiccwallet.objc.h"
+    header "Universe.objc.h"
+    header "Wiccwallet.h"
+
+    export *
+}

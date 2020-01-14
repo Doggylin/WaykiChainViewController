@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.9.1)
+  - SVProgressHUD (2.2.5)
+  - WaykiChainViewController (0.1.0):
+    - Alamofire
+    - SVProgressHUD
+
+DEPENDENCIES:
+  - WaykiChainViewController (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SVProgressHUD
+
+EXTERNAL SOURCES:
+  WaykiChainViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  WaykiChainViewController: 5fae4e0b465dca3b218f72763aff5897f780010f
+
+PODFILE CHECKSUM: 3fd587894872182b3d1f06545c0de0c32c43bc07
+
+COCOAPODS: 1.8.4

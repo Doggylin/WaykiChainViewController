@@ -1,0 +1,37 @@
+{
+  "name": "WaykiChainViewController",
+  "version": "0.1.0",
+  "summary": "A short description of WaykiChainViewController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/PsChina/WaykiChainViewController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "PsChina": "panshanzxcv.love@163.com"
+  },
+  "source": {
+    "git": "https://github.com/PsChina/WaykiChainViewController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": [
+    "WaykiChainViewController/Classes/**/*",
+    "**/*.{h,m,swift}"
+  ],
+  "public_header_files": [
+    "Pod/Classes/**/*.h",
+    "**/*.h"
+  ],
+  "dependencies": {
+    "Alamofire": [
+
+    ],
+    "SVProgressHUD": [
+
+    ]
+  }
+}
