@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WaykiChainViewController_Example' do
+  pod 'WaykiChainViewController', :path => '../'
+
+  target 'WaykiChainViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
